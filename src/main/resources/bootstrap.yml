@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: jl-eureka
+  profiles:
+    active: dev
+
+---
+spring.profiles:  dev,test,prod1,prod2
+spring.cloud.config.uri: http://127.0.0.1:9999
+spring.cloud.config.username: jingliang
+spring.cloud.config.password: jingliang666
+spring.cloud.config.fail-fast: true
